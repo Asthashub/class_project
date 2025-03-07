@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historic Places in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #ff7e5f;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .place {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 320px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .place:hover {
+            transform: scale(1.05);
+        }
+        .place img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>Historic Places to Visit in India</header>
+
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Product</a>
+        <a href="#">Commitments</a>
+        <a href="#">Stories</a>
+        <a href="#">India Blog</a>
+    </nav>
+    
+    <div class="container">
+        <div class="places">
+            <div class="place">
+                <img src="image/tajmahal.jpeg" alt="Taj Mahal">
+                <h2>Taj Mahal</h2>
+                <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.</p>
+            </div>
+            <div class="place">
+                <img src="image/redfort.jpeg" alt="Red Fort">
+                <h2>Red Fort</h2>
+                <p>Emperor Shah Jahan commissioned the construction of the Red Fort on 12 May 1639, following his decision to relocate the Mughal capital from Agra to Delhi.</p>
+            </div>
+            <div class="place">
+                <img src="image/qutubminar.jpeg" alt="Qutub Minar">
+                <h2>Qutub Minar</h2>
+                <p>The Qutb Minar is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India.</p>
+            </div>
+            <div class="place">
+                <img src="image/gatewayofindia.jpeg" alt="Gateway of India">
+                <h2>Gateway of India</h2>
+                <p>The Gateway of India is an arch-monument completed in 1924 on the waterfront of Mumbai (Bombay), India.</p>
+            </div>
+            <div class="place">
+                <img src="image/kornak.jpeg" alt="Konark Sun Temple">
+                <h2>Konark Sun Temple</h2>
+                <p>The Konark Sun Temple is a 13th-century Hindu temple in Odisha, India, dedicated to the sun god Surya.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Historic Places in India
+    </footer>
+</body>
+</html>
+
+
+<!-- display: flex; → Enables Flexbox, which aligns the items in a row by default.
+flex-wrap: wrap; → Allows the items to wrap to the next line if there's not enough space.
+justify-content: center; → Centers the items horizontally.
+gap: 20px; → Adds spacing between items.
+max-width: 320px; → Each place card is at most 320px wide.
+Since the .places container wraps items, the layout adapts based on screen size.
+
+-->
